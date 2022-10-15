@@ -71,3 +71,15 @@ describe('MapNParallel', () => {
     assert.rejects(() => MapNParallel([], n => n, 0));
   });
 });
+
+describe('Array.prototype.nmap', () => {
+  const testElements = new Array(12).fill(0).map((_, idx) => idx);
+
+  it('Maps values the same way NParallel does', async() => {
+    const resp = await testElements.nmap(async(element: number) => {
+      await sleep(Math.random() * 50);
+      return element + 1;
+    }, 3);
+    assert.strictEqual(resp[2], 3);
+  });
+});
