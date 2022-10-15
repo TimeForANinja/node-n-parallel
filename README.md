@@ -3,8 +3,8 @@
 A small library to allow you easy access to an async array-map that uses a user-defined amount of workers instead of doing all jobs in sequence or parallel. This is e.g. usefull when fetching huge amounts of web requests and optimising for both time performance and not ddos-ing your target.
 
 
-![Depfu](https://img.shields.io/depfu/fent/node-miniget)
-[![codecov](https://codecov.io/gh/fent/node-miniget/branch/master/graph/badge.svg)](https://codecov.io/gh/fent/node-miniget)
+![Depfu](https://img.shields.io/depfu/timeforaninja/node-n-parallel)
+[![codecov](https://codecov.io/gh/timeforaninja/n-parallel/branch/master/graph/badge.svg)](https://codecov.io/gh/timeforaninja/n-parallel)
 
 # Usage
 
